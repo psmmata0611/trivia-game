@@ -1,0 +1,57 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Audiowide", sans-serif;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+/*title customization*/
+.title a {
+  font-size: 1.3em;
+  color: black;
+  text-decoration: none;
+}
+
+.title a:hover {
+  color: #8f0505;
+  transition: 0.3s;
+}
+/*navigation bar customization*/
+.topnav a {
+  position: relative;
+  font-size: 1.1em;
+  color: #8f0505;
+  text-decoration: none;
+  font-weight: 500;
+  margin-left: 40px;
+}
+
+.topnav a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 100%;
+  height: 3px;
+  background: #8f0505;
+  border-radius: 5px;
+  transform-origin: right;
+  transform: scaleX(0);
+  transform: transform 0.5s;
+}
+
+.topnav a:hover::after {
+  transform-origin: left;
+  transform: scaleX(1);
+}
+

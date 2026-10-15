@@ -1,0 +1,37 @@
+/*body costumization*/
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 100vh;
+  background-image: url("../images/mian2.jpeg");
+  background-repeat: no-repeat;
+  background-size: 700px 700px;
+  background-position: center;
+  background-attachment: fixed;
+  margin: 0;
+  z-index: 99;
+  overflow: hidden;
+}
+
+/* start button costumization*/
+.btn {
+  width: 200px;
+  height: 80px;
+  background: #8f0505;
+  border: none;
+  outline: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 2em;
+  color: #fff;
+  font-weight: 500;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 45%;
+  left: 42%;
+  margin: 0;
+}
+

@@ -1,0 +1,55 @@
+
+/*Score page*/
+.score {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 100vh;
+  background-image: url(../images/world_flags.jpeg);
+  background-repeat: no-repeat;
+  background-size: 600px;
+  background-position: center;
+  background-attachment: fixed;
+}
+.scoretable {
+  font-size: 0.9em;
+}
+
+/*table customization*/
+table {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 60%;
+  border-collapse: collapse;
+  border-spacing: 0;
+  border-radius: 12px 12px 0 0;
+  overflow: hidden;
+  box-shadow: 0 2px 12px rgba(234, 9, 9, 0.3);
+  background: #8f0505;
+  text-align: center;
+}
+
+/*column head customization*/
+th,
+td {
+  padding: 12px 15px;
+}
+
+th {
+  background-color: #8f0505;
+  color: aliceblue;
+  text-transform: uppercase;
+}
+
+tr:nth-child(even) {
+  background-color: aliceblue;
+  color: #162839;
+}
+
+/* rows customization*/
+tbody {
+  background-color: #fff;
+  border-radius: 8px;
+}

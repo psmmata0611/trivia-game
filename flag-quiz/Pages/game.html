@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game | Flag "THE FLAG"</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+    <link rel="stylesheet" type="text/css" href="/css/header.css">
+    <link rel="stylesheet" type="text/css" href="/css/gamestyles.css">
+</head>
+
+<body>
+    <!-- Navegation bar-->
+    <header>
+        <h2 class="title"><a href="../index.html">Flag "THE FLAG"</a> </h2>
+        <nav class="topnav">
+            <a href="login.html">Login</a>
+            <a href="score.html">Score</a>
+            <a href="game.html">Game</a>
+            <a href="signup.html">Sign up</a>
+        </nav>
+    </header>
+
+    <!--Game display-->
+    <div class="start-btn-container">
+        <h2>FLAG Knowledge</h2>
+        <p>Test your knowledge</p>
+        <button class="start-btn">Start Quiz</button>
+    </div>
+    <div class="quiz-container">
+        <div class="timer">Time left: 10 seconds</div>
+        <h2 class="question"></h2>
+        <div class="options"></div>
+        <button class="next-btn">Next</button>
+    </div>
+    <div class="quiz-result"></div>
+
+    <!--Initialize game-->
+    <script type="module">
+        import { FlagQuiz } from '../JS/game.mjs';
+        const quiz = new FlagQuiz();
+    </script>
+</body>
+
+</html>
